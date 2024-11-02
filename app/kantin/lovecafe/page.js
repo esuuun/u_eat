@@ -5,33 +5,34 @@ import Navbar from "./_components/Navbar";
 import FoodCard from "./_components/FoodCard";
 import ProductCard from "./_components/ProductCard";
 
-function tenant() {
+function lovecafe() {
   const menuFavorit = [
     {
-      title: "Ice Cream Karambol",
-      price: "Rp15.000",
+      title: "Wings Sambal Matah",
+      price: "Rp20.000",
       star: "5.0",
-      img: "/makanan/iceCreamKarambol.png",
+      img: "/makanan/wingsmenufav.png",
     },
     {
-      title: "Aren Latte",
+      title: "Caramel Manilla Salad",
       price: "Rp18.000",
       star: "5.0",
-      img: "/minuman/TENS_arenLatte 1.png",
+      img: "/makanan/caramelmenufav.png",
     },
   ];
 
   const products = [
-    { title: "Ice Cream Karambol", price: "Rp15.000", img: "/makanan/KARAMBOLFULL.png", description : "Ice cream vanilla + Roti + Caramel + Crumble", star : "5.0" },
-    { title: "Aren Latte", price: "Rp18.000", img: "/minuman/arenLatteFull.png", description : "Kopi + Gula Aren + Susu + Es", star : "3.7" },
-    { title: "Cromboloni Lotus", price: "Rp15.000", img: "/makanan/cromboloniLotusFull.png", description : "Roti + Lotus + Coklat", star : "5.0" },
+    { title: "Wings Sambal Matah", price: "Rp25.000", img: "/makanan/wingsmenu.png", description : "Nasi + Wings Panggang Dengan Sambal Matah Spesial + Salad Mayonaise", star : "5.0" },
+    { title: "Real Madrid", price: "Rp25.000", img: "/makanan/realmenu.png", description : "Ayam File Balur Tepung Roti Dan Cheese Stick Dengan Saus Barbeque + Nasi / Kentang Goreng + Salad + Mayonaise", star : "0.0" },
+    { title: "Chelsea", price: "Rp25.000", img: "/makanan/chelseamenu.png", description : "Omelette Isi Sosi Sapi Dengan Saus Bangkok/Barbeque + Nasi/Kentang Goreng + Salad Dan Mayonaise", star : "0.0" },
+    { title: "Caramel Manilla Salad", price: "Rp18.000", img: "/makanan/caramelmenu.png", description : "Salad Buah Dengan Saus Caramel + Keju", star : "5.0" },
   ];
 
   return (
     <div className="mb-8">
       <header>
         <Navbar />
-        <img src="/tenants/tens1.png" alt="tens" className="mt-20 md:-mt-24" />
+        <img src="/tenants/lovefull.png" alt="love" className="mt-20 md:-mt-24" />
       </header>
 
       <div className="mt-10 px-5">
@@ -40,7 +41,7 @@ function tenant() {
             <img src="/arrow_icon.svg" alt="arrow icon" className="w-5" />
           </a>
 
-          <h1 className="font-bold text-2xl md:text-3xl">Tens Coffee</h1>
+          <h1 className="font-bold text-2xl md:text-3xl">Love Cafe</h1>
 
           <a href="">
             {/* <img src="/map_icon.svg" alt="map icon" className="w-6" /> */}
@@ -82,4 +83,4 @@ function tenant() {
 }
 
 
-export default tenant;
+export default lovecafe;
