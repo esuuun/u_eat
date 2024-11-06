@@ -4,7 +4,18 @@ import React, { useState } from "react";
 function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  React.useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest('nav') && isMobileMenuOpen) {
+        setIsMobileMenuOpen(false);
+      }
+    };
 
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isMobileMenuOpen]);
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
