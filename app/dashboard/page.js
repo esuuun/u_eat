@@ -1,10 +1,19 @@
 "use client"
 
-import { useSession } from "next-auth/react";
-import React from "react";
+import { useSession, signIn, signOut } from "next-auth/react";
+import { useRouter } from "next/navigation";
+import React, { useEffect } from "react";
 
-function page() {
+function Page() {
   const { data: session } = useSession();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!session) {
+      router.push('/');
+    }
+  }, [session, router]);
+
   if (session) {
     return (
       <>
@@ -13,6 +22,7 @@ function page() {
       </>
     );
   }
+
   return (
     <>
       Not signed in <br />
@@ -21,4 +31,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
