@@ -1,9 +1,10 @@
 import React from "react";
-import Navbar from "./kantin/_components/Navbar";
+import Navbar from "../components/Navbar";
 import FoodCard from "./kantin/_components/FoodCard";
 import KantinCard from "./kantin/_components/KantinCard";
 import SearchBar from "./kantin/_components/SearchBar";
 import MapCard from "./kantin/_components/MapCard";
+import LoginPopup from "../components/LoginPopup";
 
 function Home() {
   const searchbar = [{ img: "", title: "Cari makanan yang kamu pengen" }];
@@ -53,6 +54,7 @@ function Home() {
       <header>
         <Navbar />
       </header>
+      <LoginPopup />
 
       <div className="mt-36 px-5">
         {/* Title */}

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Navbar from "./_components/Navbar";
+import Navbar from "../../components/Navbar";
 import FoodCard from "./_components/FoodCard";
 import TenantCard from "./_components/TenantCard";
 

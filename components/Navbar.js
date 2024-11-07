@@ -6,14 +6,14 @@ function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   React.useEffect(() => {
     const handleClickOutside = (event) => {
-      if (!event.target.closest("nav") && isMobileMenuOpen) {
+      if (!event.target.closest('nav') && isMobileMenuOpen) {
         setIsMobileMenuOpen(false);
       }
     };
 
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [isMobileMenuOpen]);
   const toggleDropdown = () => {
@@ -33,7 +33,7 @@ function Navbar() {
   ];
 
   return (
-    <nav className="bg-white border-gray-200 text-black shadow-lg rounded-b-2xl pt-5 fixed top-0 left-0 w-full z-50">
+    <nav className="bg-white border-gray-200 text-black shadow-md rounded-b-2xl pt-5 fixed top-0 left-0 w-full z-50">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img

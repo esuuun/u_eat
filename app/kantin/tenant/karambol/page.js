@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import Navbar from "../_components/Navbar";
+import Navbar from "../../../../components/Navbar";
 import ReviewCard from "./_components/ReviewCard";
 
 function karambol() {
