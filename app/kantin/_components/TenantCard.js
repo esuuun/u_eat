@@ -2,7 +2,8 @@ import React from "react";
 
 function TenantCard({ item, index }) {
   return (
-    <div
+    <a
+      href={item.link}
       key={index}
       className="flex  max-w-52 flex-col rounded-2xl shadow-md gap-1"
     >
@@ -10,7 +11,7 @@ function TenantCard({ item, index }) {
       <div className="p-2 flex flex-col w-full">
         <span className="font-semibold text-center">{item.title}</span>
       </div>
-    </div>
+    </a>
   );
 }
 

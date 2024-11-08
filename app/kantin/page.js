@@ -8,12 +8,14 @@ import TenantCard from "./_components/TenantCard";
 function Kantin() {
   const recommended = [
     {
+      link: "/kantin/tenant/karambol",
       title: "Ice Cream Karambol",
       price: "Rp15.000",
       star: "5.0",
       img: "/makanan/iceCreamKarambol.png",
     },
     {
+      link: "#",
       title: "Sate Taichan",
       price: "Rp20.000",
       star: "5.0",
@@ -22,10 +24,10 @@ function Kantin() {
   ];
 
   const tenants = [
-    { title: "Tens Coffee", img: "/tenants/tens.png" },
-    { title: "Love Cafe", img: "/tenants/love_cafe.png" },
-    { title: "Dimsum Bu Lala", img: "/tenants/dimsum.png" },
-    { title: "Mie Ayam Jago", img: "/tenants/mie_ayam.png" },
+    { link:"/kantin/tenant", title: "Tens Coffee", img: "/tenants/tens.png" },
+    { link:"/kantin/lovecafe", title: "Love Cafe", img: "/tenants/love_cafe.png" },
+    { link:"", title: "Dimsum Bu Lala", img: "/tenants/dimsum.png" },
+    { link:"", title: "Mie Ayam Jago", img: "/tenants/mie_ayam.png" },
   ];
 
   return (
@@ -37,7 +39,7 @@ function Kantin() {
 
       <div className="mt-10 px-5">
         <div className="flex  justify-around">
-          <a href="">
+          <a href="./">
             <img src="/arrow_icon.svg" alt="arrow icon" className="w-5" />
           </a>
 

@@ -8,12 +8,14 @@ import ProductCard from "./_components/ProductCard";
 function tenant() {
   const menuFavorit = [
     {
+      link: "/kantin/tenant/karambol",
       title: "Ice Cream Karambol",
       price: "Rp15.000",
       star: "5.0",
       img: "/makanan/iceCreamKarambol.png",
     },
     {
+      link: "#",
       title: "Aren Latte",
       price: "Rp18.000",
       star: "5.0",
@@ -22,9 +24,9 @@ function tenant() {
   ];
 
   const products = [
-    { title: "Ice Cream Karambol", price: "Rp15.000", img: "/makanan/KARAMBOLFULL.png", description : "Ice cream vanilla + Roti + Caramel + Crumble", star : "5.0" },
-    { title: "Aren Latte", price: "Rp18.000", img: "/minuman/arenLatteFull.png", description : "Kopi + Gula Aren + Susu + Es", star : "3.7" },
-    { title: "Cromboloni Lotus", price: "Rp15.000", img: "/makanan/cromboloniLotusFull.png", description : "Roti + Lotus + Coklat", star : "5.0" },
+    { link:"/kantin/tenant/karambol", title: "Ice Cream Karambol", price: "Rp15.000", img: "/makanan/KARAMBOLFULL.png", description : "Ice cream vanilla + Roti + Caramel + Crumble", star : "5.0" },
+    { link:"#", title: "Aren Latte", price: "Rp18.000", img: "/minuman/arenLatteFull.png", description : "Kopi + Gula Aren + Susu + Es", star : "3.7" },
+    { link:"#", title: "Cromboloni Lotus", price: "Rp15.000", img: "/makanan/cromboloniLotusFull.png", description : "Roti + Lotus + Coklat", star : "5.0" },
   ];
 
   return (
@@ -36,7 +38,7 @@ function tenant() {
 
       <div className="mt-10 px-5">
         <div className="flex  justify-around">
-          <a href="">
+          <a href="./">
             <img src="/arrow_icon.svg" alt="arrow icon" className="w-5" />
           </a>
 

@@ -9,6 +9,7 @@ import MapCard from "./kantin/_components/MapCard";
 import LoginPopup from "../components/LoginPopup";
 import { useSession } from "next-auth/react";
 
+
 function Home() {
   // const { data: session } = useSession();
 
@@ -21,24 +22,28 @@ function Home() {
   const searchbar = [{ img: "", title: "Cari makanan yang kamu pengen" }];
   const viral = [
     {
+      link: "/kantin/tenant/karambol",
       title: "Ice Cream Karambol",
       price: "Rp15.000",
       star: "5.0",
       img: "/makanan/iceCreamKarambol.png",
     },
     {
+      link: "#",
       title: "Ayam Lodho",
       price: "Rp20.000",
       star: "5.0",
       img: "/makanan/ayamLodho.png",
     },
     {
+      link: "#",
       title: "Sate Pacil Lama",
       price: "Rp15.000",
       star: "5.0",
       img: "/makanan/satePacil.png",
     },
     {
+      link: "#",
       title: "Ayam Mas Roni",
       price: "Rp15.000",
       star: "5.0",
@@ -46,15 +51,15 @@ function Home() {
     },
   ];
   const kantin = [
-    { title: "Kantin Vokasi", img: "/kantin/vokasi.png" },
-    { title: "Kantin Psikologi", img: "/kantin/psiko.png" },
-    { title: "Kantin Sastra", img: "/kantin/sastra.png" },
-    { title: "Kantin FMIPA", img: "/kantin/fmipa.png" },
-    { title: "Kantin Hukum", img: "/kantin/hukum.png" },
-    { title: "Kantin Teknik", img: "/kantin/teknik.png" },
-    { title: "Kantin FEB", img: "/kantin/feb.png" },
-    { title: "Kantin RIK", img: "/kantin/rik.png" },
-    { title: "Kantin FISIP", img: "/kantin/fisip.png" },
+    { link: "/kantin",title: "Kantin Vokasi", img: "/kantin/vokasi.png" },
+    { link: "#",title: "Kantin Psikologi", img: "/kantin/psiko.png" },
+    { link: "#",title: "Kantin Sastra", img: "/kantin/sastra.png" },
+    { link: "#",title: "Kantin FMIPA", img: "/kantin/fmipa.png" },
+    { link: "#",title: "Kantin Hukum", img: "/kantin/hukum.png" },
+    { link: "#",title: "Kantin Teknik", img: "/kantin/teknik.png" },
+    { link: "#",title: "Kantin FEB", img: "/kantin/feb.png" },
+    { link: "#",title: "Kantin RIK", img: "/kantin/rik.png" },
+    { link: "#",title: "Kantin FISIP", img: "/kantin/fisip.png" },
   ];
 
   const denah = [{ title: "Denah Universitas Indonesia", img: "/denah.png" }];

@@ -2,7 +2,8 @@ import React from "react";
 
 function KantinCard({ item, index }) {
     return (
-        <div
+        <a
+            href={item.link}
             key={index}
             className="relative w-32 h-24 rounded-2xl shadow-md gap-1"
         >
@@ -13,7 +14,7 @@ function KantinCard({ item, index }) {
                 <span className="font-bold whitespace-nowrap">{item.title}</span>
             </div>
             <img src={item.img} className="w-full h-full object-cover rounded-2xl" />
-        </div>
+        </a>
     );
 }
 

@@ -37,7 +37,7 @@ function lovecafe() {
 
       <div className="mt-10 px-5">
         <div className="flex  justify-around">
-          <a href="">
+          <a href="./">
             <img src="/arrow_icon.svg" alt="arrow icon" className="w-5" />
           </a>
 
