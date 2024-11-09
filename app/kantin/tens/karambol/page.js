@@ -109,21 +109,25 @@ function karambol() {
 
       {/* review popup */}
 
-      {isReview && (
-        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div ref={popupRef} className="rounded-lg fixed bottom-0 bg-white w-full h-[50%] p-2 overflow-y-auto">
-            <div className="text-center w-full">
-              <span className="font-bold text-lg">Ulasan dan rating</span>
-              {reviewData.map((review) => (
-                <ReviewCard
-                  key={review.id}
-                  item={review}
-                />
-              ))}
-            </div>
+      <div
+        className={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-50 transition-opacity duration-300 ${
+          isReview ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+      >
+        <div
+          ref={popupRef}
+          className={`rounded-lg fixed bottom-0 bg-white w-full h-[50%] p-2 overflow-y-auto transition-transform duration-300 ease-in-out ${
+            isReview ? "translate-y-0" : "translate-y-full"
+          }`}
+        >
+          <div className="text-center w-full">
+            <span className="font-bold text-lg">Ulasan dan rating</span>
+            {reviewData.map((review) => (
+              <ReviewCard key={review.id} item={review} />
+            ))}
           </div>
         </div>
-      )}
+      </div>
     </div>
   );
 }

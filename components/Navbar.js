@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import LoginPopup from "./LoginPopup";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
@@ -7,7 +7,6 @@ import { useRouter } from "next/navigation";
 function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [loading, setLoading] = useState(false);
   const { data: session } = useSession();
   const [isLoginPopupOpen, setIsLoginPopupOpen] = useState(false);
 
@@ -25,10 +24,6 @@ function Navbar() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isMobileMenuOpen]);
-
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -102,9 +97,9 @@ function Navbar() {
         />
 
         <div
-          className={`${
-            isMobileMenuOpen ? "block" : "hidden"
-          } fixed top-0 right-0 h-full w-[70%] bg-[#FECC3B] md:block md:w-auto md:static md:bg-white rounded-l-2xl z-50`}
+          className={`fixed top-0 right-0 h-full w-[70%] bg-[#FECC3B] md:block md:w-auto md:static md:bg-white rounded-l-2xl z-50 transition-transform duration-300 ${
+            isMobileMenuOpen ? "translate-x-0" : "translate-x-full md:translate-x-0"
+          }`}
           id="navbar-default"
         >
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 md:mt-0 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:border-0">
