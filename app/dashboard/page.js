@@ -36,9 +36,9 @@ function Page() {
         </div>
       </header>
 
-      <div className="flex items-center w-full rounded-2xl shadow-lg gap-1 border p-5 mt-5">
-          {/* <img src={session.user.image} alt="" className="w-14 h-14" /> */}
-          <img src="/avatar.png" alt="User profile image" className="w-14 h-14" />
+      <div className="flex items-center w-full rounded-2xl shadow-lg gap-1 -translate-x-3 border p-5 mt-5">
+          <img src={session.user.image} alt="" className="w-14 h-14" />
+          {/* <img src="/avatar.png" alt="User profile image" className="w-14 h-14" /> */}
         <div className="flex flex-col w-full ml-3">
           <h1 className="font-bold text-2xl">{session.user.name}</h1>
           <p className="font-medium">{session.user.email}</p>
