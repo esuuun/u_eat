@@ -24,7 +24,7 @@ function Kantin() {
   ];
 
   const tenants = [
-    { link:"/kantin/tenant", title: "Tens Coffee", img: "/tenants/tens.png" },
+    { link:"/kantin/tens", title: "Tens Coffee", img: "/tenants/tens.png" },
     { link:"/kantin/lovecafe", title: "Love Cafe", img: "/tenants/love_cafe.png" },
     { link:"", title: "Dimsum Bu Lala", img: "/tenants/dimsum.png" },
     { link:"", title: "Mie Ayam Jago", img: "/tenants/mie_ayam.png" },

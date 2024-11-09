@@ -8,12 +8,14 @@ import ProductCard from "./_components/ProductCard";
 function lovecafe() {
   const menuFavorit = [
     {
+      link: "/kantin/lovecafe/wings-matah",
       title: "Wings Sambal Matah",
       price: "Rp20.000",
       star: "5.0",
       img: "/makanan/wingsmenufav.png",
     },
     {
+      link: "#",
       title: "Caramel Manilla Salad",
       price: "Rp18.000",
       star: "5.0",
@@ -22,10 +24,10 @@ function lovecafe() {
   ];
 
   const products = [
-    { title: "Wings Sambal Matah", price: "Rp25.000", img: "/makanan/wingsmenu.png", description : "Nasi + Wings Panggang Dengan Sambal Matah Spesial + Salad Mayonaise", star : "5.0" },
-    { title: "Real Madrid", price: "Rp25.000", img: "/makanan/realmenu.png", description : "Ayam File Balur Tepung Roti Dan Cheese Stick Dengan Saus Barbeque + Nasi / Kentang Goreng + Salad + Mayonaise", star : "0.0" },
-    { title: "Chelsea", price: "Rp25.000", img: "/makanan/chelseamenu.png", description : "Omelette Isi Sosi Sapi Dengan Saus Bangkok/Barbeque + Nasi/Kentang Goreng + Salad Dan Mayonaise", star : "0.0" },
-    { title: "Caramel Manilla Salad", price: "Rp18.000", img: "/makanan/caramelmenu.png", description : "Salad Buah Dengan Saus Caramel + Keju", star : "5.0" },
+    { link: "/kantin/lovecafe/wings-matah", title: "Wings Sambal Matah", price: "Rp25.000", img: "/makanan/wingsmenu.png", description : "Nasi + Wings Panggang Dengan Sambal Matah Spesial + Salad Mayonaise", star : "5.0" },
+    { link: "#", title: "Real Madrid", price: "Rp25.000", img: "/makanan/realmenu.png", description : "Ayam File Balur Tepung Roti Dan Cheese Stick Dengan Saus Barbeque + Nasi / Kentang Goreng + Salad + Mayonaise", star : "0.0" },
+    { link: "#", title: "Chelsea", price: "Rp25.000", img: "/makanan/chelseamenu.png", description : "Omelette Isi Sosi Sapi Dengan Saus Bangkok/Barbeque + Nasi/Kentang Goreng + Salad Dan Mayonaise", star : "0.0" },
+    { link: "#", title: "Caramel Manilla Salad", price: "Rp18.000", img: "/makanan/caramelmenu.png", description : "Salad Buah Dengan Saus Caramel + Keju", star : "5.0" },
   ];
 
   return (

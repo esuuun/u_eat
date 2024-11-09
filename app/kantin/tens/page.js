@@ -8,7 +8,7 @@ import ProductCard from "./_components/ProductCard";
 function tenant() {
   const menuFavorit = [
     {
-      link: "/kantin/tenant/karambol",
+      link: "/kantin/tens/karambol",
       title: "Ice Cream Karambol",
       price: "Rp15.000",
       star: "5.0",
@@ -24,7 +24,7 @@ function tenant() {
   ];
 
   const products = [
-    { link:"/kantin/tenant/karambol", title: "Ice Cream Karambol", price: "Rp15.000", img: "/makanan/KARAMBOLFULL.png", description : "Ice cream vanilla + Roti + Caramel + Crumble", star : "5.0" },
+    { link:"/kantin/tens/karambol", title: "Ice Cream Karambol", price: "Rp15.000", img: "/makanan/KARAMBOLFULL.png", description : "Ice cream vanilla + Roti + Caramel + Crumble", star : "5.0" },
     { link:"#", title: "Aren Latte", price: "Rp18.000", img: "/minuman/arenLatteFull.png", description : "Kopi + Gula Aren + Susu + Es", star : "3.7" },
     { link:"#", title: "Cromboloni Lotus", price: "Rp15.000", img: "/makanan/cromboloniLotusFull.png", description : "Roti + Lotus + Coklat", star : "5.0" },
   ];

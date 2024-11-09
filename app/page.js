@@ -21,7 +21,7 @@ function Home() {
   const searchbar = [{ img: "", title: "Cari makanan yang kamu pengen" }];
   const viral = [
     {
-      link: "/kantin/tenant/karambol",
+      link: "/kantin/tens/karambol",
       title: "Ice Cream Karambol",
       price: "Rp15.000",
       star: "5.0",
@@ -112,7 +112,6 @@ function Home() {
 
         {/* Denah */}
         <div className="flex flex-col mt-10 gap-4">
-          <p className="font-bold text-xl md:text-lg">Lokasi Kantin</p>
           <div className="flex gap-4">
             {denah.map((item, index) => (
               <div key={index}>
