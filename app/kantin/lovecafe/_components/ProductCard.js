@@ -8,7 +8,8 @@ function ProductCard({ item, index }) {
   };
 
   return (
-    <div
+    <a
+      href={item.link}
       key={index}
       className="flex max-w-sm rounded-2xl shadow-md overflow-hidden border border-gray-300 cursor-pointer"
       onClick={() => window.location.href = `/product/${item.id}`}
@@ -48,7 +49,7 @@ function ProductCard({ item, index }) {
           </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 }
 

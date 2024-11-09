@@ -2,7 +2,8 @@ import React from "react";
 
 function FoodCard({ item, index }) {
     return (
-        <div
+        <a
+            href={item.link}
             key={index}
             className="flex max-w-52 flex-col rounded-2xl shadow-md gap-1"
         >
@@ -16,7 +17,7 @@ function FoodCard({ item, index }) {
                     <span className="font-bold text-sm">{item.star}</span>
                 </div>
             </div>
-        </div>
+        </a>
     );
 }
 

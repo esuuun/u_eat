@@ -17,7 +17,7 @@ function karambol() {
             </header>
             <div className='w-full mt-20 flex flex-col justify-center items-center'>
                 <div className="w-full flex justify-start px-6 absolute top-0 left-0 mt-28">
-                    <a href="" className="bg-white rounded-full p-2 shadow-md">
+                    <a href="./" className="bg-white rounded-full p-2 shadow-md">
                         <img src="/arrow_icon.svg" alt="arrow icon" className="w-5" />
                     </a>
                 </div>
