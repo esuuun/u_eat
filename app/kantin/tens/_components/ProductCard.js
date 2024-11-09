@@ -33,18 +33,18 @@ function ProductCard({ item, index }) {
             />
           ))}
           {/* div for heart and review */}
-          <div className="flex items-center gap-2 ml-auto">
+          <div className="flex items-center gap-2 ml-auto pb-2">
             {/* HeartIcon */}
             <button alt = "Heart Icon" className="text-gray-500 hover:text-gray-700" onClick={(e) => { e.stopPropagation(); handleFavoriteClick(); }}>
               <img
                 src={isFavorite ? '/iconHeartRed.svg' : '/iconHeart.svg'}
-                className="w-3 hover:scale-110 transition-transform duration-300"
+                className="w-5 hover:scale-110 transition-transform duration-300"
                 style={{ filter: isFavorite ? 'invert(22%) sepia(100%) saturate(7453%) hue-rotate(357deg) brightness(102%) contrast(107%)' : 'none' }}
               />
             </button>
             {/* ReviewIcon */}
             <button alt = "ReviewIcon" className="text-gray-500 hover:text-gray-700" onClick={(e) => e.stopPropagation()}>
-              <img src="/iconSearch.svg" className="w-3 hover:scale-110 transition-transform duration-300"></img>
+              <img src="/iconSearch.svg" className="w-5 hover:scale-110 transition-transform duration-300"></img>
             </button>
           </div>
         </div>

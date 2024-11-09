@@ -8,7 +8,7 @@ import TenantCard from "./_components/TenantCard";
 function Kantin() {
   const recommended = [
     {
-      link: "/kantin/tenant/karambol",
+      link: "/kantin/tens/karambol",
       title: "Ice Cream Karambol",
       price: "Rp15.000",
       star: "5.0",
