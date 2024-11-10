@@ -69,7 +69,7 @@ function Home() {
         <Navbar />
       </header>
 
-      <div className="mt-36 px-5">
+      <div className="mt-36 px-3 md:px-5">
         {/* Title */}
         <div className="flex justify-center text-center text-2xl font-bold m-5 items-center">
           <h1>

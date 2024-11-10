@@ -16,10 +16,10 @@ function KantinCard({ item, index }) {
 
       {/* Text Overlay */}
       <div
-        className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 
-                   rounded-2xl text-white font-bold text-xs md:text-sm lg:text-base z-10"
+        className="absolute inset-0 flex items-center justify-center rounded-2xl 
+                   text-white font-bold text-xs md:text-sm lg:text-base bg-black bg-opacity-20"
       >
-        <span className="whitespace-nowrap">{item.title}</span>
+        <span className="whitespace-nowrap text-center">{item.title}</span>
       </div>
     </a>
   );
