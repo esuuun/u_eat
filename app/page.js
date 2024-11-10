@@ -101,7 +101,7 @@ function Home() {
           <p className="font-bold text-xl md:text-lg">
             Pilih kantin yang kamu mau!
           </p>
-          <div className="grid grid-cols-3 gap-4 md:flex md:overflow-x-auto">
+          <div className="grid grid-cols-3 gap-1 md:gap-4 md:flex md:overflow-x-auto">
             {kantin.map((item, index) => (
               <div key={index}>
                 <KantinCard item={item} index={index} />
