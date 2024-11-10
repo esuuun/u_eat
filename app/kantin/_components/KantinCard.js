@@ -5,15 +5,22 @@ function KantinCard({ item, index }) {
     <a
       href={item.link}
       key={index}
-      className="relative w-32 h-24 rounded-2xl shadow-md gap-1"
+      className="relative w-32 h-24 rounded-2xl shadow-md overflow-hidden"
     >
+      {/* Image */}
+      <img
+        src={item.img}
+        alt={item.title}
+        className="w-full h-full object-cover rounded-2xl"
+      />
+
+      {/* Text Overlay */}
       <div
-        className="absolute inset-0 flex items-center justify-center text-center
-                  text-white p-0 md:p-2 rounded-2xl font-normal lg:text-sm text-xs"
+        className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 
+                   rounded-2xl text-white font-bold text-xs md:text-sm lg:text-base z-10"
       >
-        <span className="font-bold whitespace-nowrap">{item.title}</span>
+        <span className="whitespace-nowrap">{item.title}</span>
       </div>
-      <img src={item.img} className="w-full h-full object-cover rounded-2xl" />
     </a>
   );
 }
