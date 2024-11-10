@@ -111,8 +111,8 @@ function Home() {
         </div>
 
         {/* Denah */}
-        <div className="flex flex-col mt-10 gap-4">
-          <div className="flex gap-4">
+        <div className="flex  flex-col mt-10 gap-4">
+          <div className="flex gap-4 ">
             {denah.map((item, index) => (
               <div key={index}>
                 <MapCard item={item} index={index} />

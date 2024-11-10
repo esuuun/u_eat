@@ -52,7 +52,7 @@ function Navbar() {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
-            src="/ueat_icon.svg"
+            src="/logoUEAT.png"
             alt="U Eat Icon"
             className="w-32 md:w-44"
           ></img>

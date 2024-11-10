@@ -9,7 +9,7 @@ function KantinCard({ item, index }) {
         >
             <div 
                 className="absolute inset-0 flex items-center justify-center text-center
-                  text-white p-2 rounded-2xl text-sm"
+                  text-white p-2 rounded-2xl font-normal lg:text-sm  sm: text-xs"
             >
                 <span className="font-bold whitespace-nowrap">{item.title}</span>
             </div>
